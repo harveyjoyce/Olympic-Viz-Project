@@ -1,8 +1,12 @@
 # Olympic-Viz-Project
 
+![Olympic_flag svg](https://github.com/harveyjoyce/Olympic-Viz-Project/assets/158076969/5276ca56-0683-4272-bbb2-a90de82f0eb3)
+
 # 🅰️About
 
 Welcome to the Olympic Games Data Analysis project repository! This project focuses on the comprehensive analysis of Olympic Games results using SQL and Tableau visualization. By setting up a local MySQL database, importing Olympic Games results data, and designing a custom schema to efficiently store and manage the data, this project aims to provide insightful perspectives on various aspects of the Olympic Games across different regions and over time.
+
+[See in Tableau Public](https://public.tableau.com/app/profile/harvey.joyce/viz/OlympicsDashboardSQLProject/CountryPerformance?publish=yes)
 
 # 🗝️Key Features
 
@@ -114,3 +118,38 @@ ALTER TABLE results ADD FOREIGN KEY (games_id) REFERENCES games(games_id);
 ALTER TABLE results ADD FOREIGN KEY (event_id) REFERENCES events(event_id);
 
 ```
+
+I downloaded DBeaver and created an ER diagram to visualize table relationships.
+
+![Olympic Schema](https://github.com/harveyjoyce/Olympic-Viz-Project/assets/158076969/037e09c7-56c2-4166-9d81-4cc2a8009cca)
+
+
+## 📊 Tableau Integration
+
+The MySQL database is seamlessly connected to Tableau for visualization and dashboard creation, enabling intuitive exploration of the Olympic Games data.
+
+![Tableau Model](https://github.com/harveyjoyce/Olympic-Viz-Project/assets/158076969/620e554d-0fd5-4887-b4ef-bcda98bface6)
+
+## 🔍 Exploratory Analysis
+
+Through Tableau dashboards, the project offers in-depth exploratory analysis of individual regions' performance across various Olympic Games metrics. Moreover, key metrics are compared across different editions of the Games, providing valuable insights into trends and patterns over time.
+
+### My first Dashboard looks at Country Performance:
+
+- First, I have a series of KPIs looking at Events Competed, Medals Won and Athletes Competed, with extra KPIs breaking down medal types and gender.
+- My next chart looks at how each country compares to the others in the medal table.
+- There is another chart that looks at what was the country's win (gold medal) ratio for each sport group.
+- The final chart looks at the country's best ranking athletes.
+
+There is tooltip and filter functionality across the dashboard.
+
+![Dashboard Country Performance](https://github.com/harveyjoyce/Olympic-Viz-Project/assets/158076969/89fd1cff-dcca-4783-9c26-42485a0fb0b5)
+
+### My second Dashboard looks at Athlete Metrics:
+
+- The chart shows each athlete's recorded age and BMI over the years. This shows the distribution and averages over time.
+- This chart can be filtered for specific countries, gender, sport group or medal type.
+
+![Dashboard Athlete Metrics](https://github.com/harveyjoyce/Olympic-Viz-Project/assets/158076969/4c46903c-2a21-4243-bc65-20a483721600)
+
+[See in Tableau Public](https://public.tableau.com/app/profile/harvey.joyce/viz/OlympicsDashboardSQLProject/CountryPerformance?publish=yes)
